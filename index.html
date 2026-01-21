@@ -4,76 +4,132 @@
   <meta charset="UTF-8" />
   <title>Terry Jung | Composer & Pianist</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <style>
+    :root {
+      --purple-dark: #2b203a;
+      --purple-main: #5a4b7a;
+      --purple-soft: #e9e6f2;
+      --purple-accent: #7d6aa8;
+      --text-main: #222;
+    }
+
     body {
       margin: 0;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: #fafafa;
-      color: #222;
+      background: var(--purple-soft);
+      color: var(--text-main);
       line-height: 1.8;
     }
+
     header {
-      padding: 90px 20px;
+      padding: 100px 20px;
       text-align: center;
-      background: #111;
+      background: linear-gradient(135deg, var(--purple-dark), var(--purple-main));
       color: #fff;
     }
+
     header h1 {
       margin: 0;
       font-size: 3rem;
       font-weight: 700;
+      letter-spacing: 0.03em;
     }
+
     header p {
       margin-top: 18px;
       font-size: 1.2rem;
-      opacity: 0.85;
+      opacity: 0.9;
     }
+
     section {
       max-width: 900px;
       margin: 0 auto;
-      padding: 70px 20px;
+      padding: 80px 20px;
+      background: #fff;
     }
+
+    section + section {
+      margin-top: 20px;
+    }
+
     h2 {
       font-size: 2rem;
       margin-bottom: 25px;
-      border-bottom: 2px solid #eee;
+      border-bottom: 2px solid var(--purple-soft);
       padding-bottom: 10px;
+      color: var(--purple-main);
     }
+
+    .album-cover {
+      max-width: 320px;
+      display: block;
+      margin: 0 auto 30px;
+      border-radius: 10px;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.18);
+    }
+
     .album-title {
-      font-size: 1.4rem;
+      font-size: 1.5rem;
       font-weight: 600;
-      margin-bottom: 10px;
+      margin-bottom: 6px;
+      color: var(--purple-dark);
+      text-align: center;
     }
+
+    .release-date {
+      font-size: 0.95rem;
+      color: #666;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
     .tracklist {
       padding-left: 20px;
       margin-bottom: 25px;
     }
+
     .tracklist li {
       margin-bottom: 8px;
     }
+
     .linktree-box {
-      margin-top: 30px;
-      padding: 25px;
-      border: 1px solid #ddd;
-      background: #fff;
+      margin-top: 35px;
+      padding: 30px;
+      border-radius: 6px;
+      background: linear-gradient(135deg, #ffffff, var(--purple-soft));
+      border: 1px solid #d6d0e6;
       text-align: center;
     }
+
     .linktree-box a {
       display: inline-block;
-      margin-top: 10px;
-      padding: 12px 22px;
-      background: #111;
+      margin-top: 14px;
+      padding: 14px 26px;
+      background: var(--purple-main);
       color: #fff;
       text-decoration: none;
-      border-radius: 4px;
-      font-weight: 500;
+      border-radius: 30px;
+      font-weight: 600;
+      letter-spacing: 0.02em;
     }
+
+    .linktree-box a:hover {
+      background: var(--purple-accent);
+    }
+
     footer {
       text-align: center;
-      padding: 40px 20px;
+      padding: 50px 20px;
       font-size: 0.9rem;
       color: #666;
-      border-top: 1px solid #eee;
+      background: var(--purple-soft);
+      margin-top: 40px;
+    }
+
+    a {
+      color: var(--purple-accent);
+      text-decoration: none;
     }
   </style>
 </head>
@@ -91,35 +147,42 @@
   <p>
     정태성(Terry Jung)은 클래식 기반의 크로스오버 음악을 작곡하는
     어린 작곡가이자 피아니스트입니다.<br><br>
-    자연과 환경, 상상력에서 출발한 메시지를 음악으로 풀어내며,
-    자신만의 이야기를 소리로 기록해 나가고 있습니다.
+    자연과 환경, 상상력에서 출발한 메시지를
+    음악으로 풀어내며 자신만의 세계를 소리로 기록해 나가고 있습니다.
   </p>
 </section>
 
 <section>
   <h2>Music</h2>
 
+  <!-- 앨범 자켓 -->
+  <img src="album-cover.jpg"
+       alt="The Counterattack Of Nature Album Cover"
+       class="album-cover" />
+
   <div class="album-title">
     Album · <em>The Counterattack Of Nature</em>
   </div>
 
+  <div class="release-date">
+    Release Date · 2026.01.08
+  </div>
+
   <ol class="tracklist">
-    <li>〈유독가스의 역습〉</li>
-    <li>〈산성비의 역습〉</li>
+    <li>〈유독가스의 역습〉 (2026.01.08)</li>
+    <li>〈산성비의 역습〉 (2026.01.08)</li>
   </ol>
 
   <p>
     본 앨범은 국내 및 해외 주요 스트리밍 플랫폼을 통해
-    전 세계에 공개되었습니다.
+    전 세계에 동시 공개되었습니다.
   </p>
 
   <div class="linktree-box">
     <p><strong>Listen on all platforms</strong></p>
     <p>
-      아래 버튼을 통해<br>
       Spotify · Apple Music · Melon · Genie · Bugs · FLO · VIBE<br>
-      YouTube · Amazon · TIDAL · Deezer · Pandora 등<br>
-      모든 스트리밍 플랫폼에서 감상하실 수 있습니다.
+      YouTube · Amazon · TIDAL · Deezer · Pandora 외
     </p>
     <a href="https://linktr.ee/woontaejung" target="_blank">
       🎧 Listen via Linktree
@@ -131,9 +194,9 @@
 <section>
   <h2>Timeline</h2>
   <ul>
-    <li>2024.09 – 앨범 《The Counterattack Of Nature》 발매</li>
-    <li>2024.09 – 〈유독가스의 역습〉 공개</li>
-    <li>2024.09 – 〈산성비의 역습〉 공개</li>
+    <li>2026.01.08 – 앨범 《The Counterattack Of Nature》 발매</li>
+    <li>2026.01.08 – 〈유독가스의 역습〉 공개</li>
+    <li>2026.01.08 – 〈산성비의 역습〉 공개</li>
   </ul>
 </section>
 
