@@ -69,7 +69,7 @@
       box-shadow: 0 12px 30px rgba(0,0,0,0.18);
     }
 
-    /* 프로필 사진 스타일 */
+    /* 프로필 및 레이아웃 스타일 */
     .profile-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -99,6 +99,24 @@
       text-align: center;
     }
 
+    /* 음원 듣기 버튼 스타일 */
+    .listen-btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background: var(--purple-soft);
+      color: var(--purple-main);
+      text-decoration: none;
+      border-radius: 20px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      border: 1px solid var(--purple-accent);
+    }
+    .listen-btn:hover {
+      background: var(--purple-main);
+      color: #fff;
+    }
+
     .linktree-box {
       margin-top: 35px;
       padding: 30px;
@@ -108,8 +126,7 @@
       text-align: center;
     }
 
-    .linktree-box a,
-    .youtube-box a {
+    .linktree-box a, .youtube-box a {
       display: inline-block;
       margin-top: 14px;
       padding: 14px 26px;
@@ -121,8 +138,7 @@
       letter-spacing: 0.02em;
     }
 
-    .linktree-box a:hover,
-    .youtube-box a:hover {
+    .linktree-box a:hover, .youtube-box a:hover {
       background: var(--purple-accent);
     }
 
@@ -193,10 +209,11 @@
     타이틀 트랙 <strong>‘유독가스의 역습’</strong>은 현대 도시를 뒤덮는 보이지 않는 위협을 피아노로 묘사하며, 몽환적인 화성과 리듬을 통해 긴장과 아름다움이 공존하는 사운드 풍경을 펼쳐낸다. 이어지는 <strong>‘산성비의 역습’</strong>은 숲이 변형되어가는 초현실적 이미지를 음악적으로 풀어내며, 부서지는 음향과 섬세한 선율을 클래식적 구성 안에 자연스럽게 담아낸다.
   </p>
 
-  <div style="background: #fcfcfc; padding: 15px; border-radius: 10px; margin-bottom: 40px; border: 1px solid #eee;">
+  <div style="background: #fcfcfc; padding: 15px; border-radius: 10px; margin-bottom: 20px; border: 1px solid #eee; text-align: center;">
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; font-size: 0.85rem; color: #555;">
       <div>01_유독가스의 역습</div><div>02_산성비의 역습</div>
     </div>
+    <a href="https://linktr.ee/terryjung1stalbum" class="listen-btn">🎧 Listen to Album 1</a>
   </div>
 
   <hr style="border: 0; border-top: 1px solid #eee; margin: 40px 0;">
@@ -213,14 +230,15 @@
 
   <p style="text-align: left; font-size: 0.95rem; line-height: 1.6; color: #444; margin-bottom: 30px;">
     음악계의 천재 소년 Terry Jung이 Electronica로 다시 그리는, 순수 상상력의 장대한 파노라마!<br><br>
-    Terry Jung의 두 번째 앨범은, 단순히 어린이의 작품을 넘어선, 전 세대를 위한 판타지 음악 영화입니다. 꿈꾸는 듯 현란한 멜로디와 박동하는 리듬을 메인으로, 베이스와 Synth가 유기적으로 호흡하며 압도적인 몰입감을 선사합니다. 지난 2년간의 습작을 Electronica 버전으로 완벽하게 재해석한 이 앨범은, 34곡의 장대한 서사를 통해 고전 클래식 음악의 구조와 미래지향적 전자음악의 감성이 조화를 이루는 놀라운 음악의 연금술을 선보입니다.
+    Terry Jung의 두 번째 앨범은, 단순히 어린이의 작품을 넘어선, 전 세대를 위한 판타지 음악 영화입니다. 꿈꾸는 듯 현란한 멜로디와 박동하는 리듬을 메인으로, 베이스와 Synth가 유기적으로 호흡하며 압도적인 몰입감을 선사합니다.
   </p>
 
-  <div style="background: #f8f7fa; padding: 20px; border-radius: 10px; margin: 30px 0; border: 1px solid #e0dce9;">
-    <p style="text-align: center; font-weight: bold; margin-bottom: 15px; color: var(--purple-dark);">Tracklist (34 Tracks)</p>
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; font-size: 0.85rem; color: #444;">
+  <div style="background: #f8f7fa; padding: 20px; border-radius: 10px; margin: 30px 0; border: 1px solid #e0dce9; text-align: center;">
+    <p style="font-weight: bold; margin-bottom: 15px; color: var(--purple-dark);">Tracklist (34 Tracks)</p>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; font-size: 0.85rem; color: #444; margin-bottom: 15px;">
       <div>01_ Beginning of the Adventure</div><div>02_운석 충돌</div><div>03_훼손된 보금자리</div><div>04_초음파 번개</div><div>05_해저 2만리</div><div>06_시공간 초월</div><div>07_예언이 된 사전</div><div>08_찾아온 평화</div><div>09_아찔한 순간</div><div>10_시대의 초월</div><div>11_영혼의 부름</div><div>12_블랙홀을 넘어</div><div>13_다른 차원 문</div><div>14_음악속의 비밀공간</div><div>15_우주를 넘어</div><div>16_오리엔탈리즘 차원 문</div><div>17_미래의 악한 AI</div><div>18_가자 과거로</div><div>19_놀이공원의 좀비들</div><div>20_정글 유괴</div><div>21_이슬람 성전에 갇힘</div><div>22_크리스마스 전쟁</div><div>23_바닷속 독성 해파리 출현</div><div>24_대규모 지진</div><div>25_비행기 추락</div><div>26_홍수</div><div>27_백두산 폭발</div><div>28_63빌딩 테러</div><div>29_화재</div><div>30_USB 데이터 속</div><div>31_태풍의 역습</div><div>32_동굴에서 길 잃음</div><div>33_가자 미래로</div><div>34_붉은 밤하늘의 저주</div>
     </div>
+    <a href="https://linktr.ee/terryjung2ndalbum" class="listen-btn">🎧 Listen to Dino Adventure</a>
   </div>
 
   <div class="linktree-box">
