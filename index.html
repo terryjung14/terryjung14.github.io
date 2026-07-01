@@ -1,219 +1,856 @@
 <!DOCTYPE html>
+
 <html lang="ko">
+
 <head>
+
 <meta charset="UTF-8" />
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
 <title>Terry Jung | Composer & Pianist</title>
 
+
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
+
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,400..600&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
 
+
+
 <style>
+
   :root{
+
     --ink:#0c0a18;
+
     --ink-2:#141026;
+
     --ink-3:#1d1733;
+
     --violet:#8b6df0;
+
     --violet-soft:#b6a3f5;
+
     --aurora:#5be8c9;
+
     --gold:#e9c46a;
+
     --paper:#f4f1fb;
+
     --muted:#9b93b8;
+
     --line:rgba(182,163,245,.16);
+
     --maxw:1080px;
+
   }
 
+
+
   *{box-sizing:border-box}
+
   html{scroll-behavior:smooth}
-  body{margin:0;font-family:"Space Grotesk",sans-serif;background:var(--ink);color:var(--paper);line-height:1.75;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+
+  body{
+
+    margin:0;
+
+    font-family:"Space Grotesk",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+
+    background:var(--ink);
+
+    color:var(--paper);
+
+    line-height:1.75;
+
+    -webkit-font-smoothing:antialiased;
+
+    overflow-x:hidden;
+
+  }
+
   a{color:inherit;text-decoration:none}
+
   img{display:block;max-width:100%}
 
+
+
   .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
-  .eyebrow{font-size:.72rem;letter-spacing:.32em;text-transform:uppercase;color:var(--aurora);font-weight:500;display:flex;align-items:center;gap:12px}
+
+  .eyebrow{
+
+    font-size:.72rem;letter-spacing:.32em;text-transform:uppercase;
+
+    color:var(--aurora);font-weight:500;display:flex;align-items:center;gap:12px;
+
+  }
+
   .eyebrow::before{content:"";width:26px;height:1px;background:var(--aurora);opacity:.7}
 
-  header.hero{position:relative;min-height:100svh;display:flex;flex-direction:column;justify-content:center;overflow:hidden;background:radial-gradient(120% 90% at 80% 0%, rgba(139,109,240,.28), transparent 55%), radial-gradient(100% 80% at 10% 100%, rgba(91,232,201,.16), transparent 50%), var(--ink)}
-  .stars{position:absolute;inset:0;pointer-events:none;opacity:.7}
-  .hero-inner{position:relative;z-index:3;width:100%}
-  .hero-inner .wrap{display:flex;flex-direction:column;gap:26px}
-  .hero h1{font-family:"Fraunces",serif;font-weight:600;margin:0;line-height:.94;letter-spacing:-.02em;font-size:clamp(3.2rem,11vw,8.2rem)}
-  .hero h1 .en{display:block;font-style:italic;font-weight:400;background:linear-gradient(100deg,var(--violet-soft),var(--aurora));-webkit-background-clip:text;background-clip:text;color:transparent}
-  .hero .role{font-size:clamp(1rem,2.2vw,1.35rem);color:var(--paper);max-width:54ch;font-weight:300}
-  .tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:4px}
-  .tag{font-size:.74rem;letter-spacing:.12em;text-transform:uppercase;border:1px solid var(--line);border-radius:100px;padding:6px 14px;color:var(--violet-soft);backdrop-filter:blur(4px)}
 
-  .eq{position:absolute;left:0;right:0;bottom:0;height:130px;z-index:2;display:flex;align-items:flex-end;gap:5px;padding:0 6px;opacity:.85}
-  .eq span{flex:1;background:linear-gradient(to top,var(--violet),transparent);border-radius:3px 3px 0 0;transform-origin:bottom;animation:bar 1.6s ease-in-out infinite}
+
+  header.hero{
+
+    position:relative;min-height:100svh;display:flex;flex-direction:column;
+
+    justify-content:center;overflow:hidden;
+
+    background:
+
+      radial-gradient(120% 90% at 80% 0%, rgba(139,109,240,.28), transparent 55%),
+
+      radial-gradient(100% 80% at 10% 100%, rgba(91,232,201,.16), transparent 50%),
+
+      var(--ink);
+
+  }
+
+  .stars{position:absolute;inset:0;pointer-events:none;opacity:.7}
+
+  .hero-inner{position:relative;z-index:3;width:100%}
+
+  .hero-inner .wrap{display:flex;flex-direction:column;gap:26px}
+
+  .hero h1{
+
+    font-family:"Fraunces",serif;font-weight:600;font-optical-sizing:144;
+
+    margin:0;line-height:.94;letter-spacing:-.02em;
+
+    font-size:clamp(3.2rem,11vw,8.2rem);
+
+  }
+
+  .hero h1 .en{
+
+    display:block;font-style:italic;font-weight:400;
+
+    background:linear-gradient(100deg,var(--violet-soft),var(--aurora));
+
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+
+  }
+
+  .hero .role{
+
+    font-size:clamp(1rem,2.2vw,1.35rem);color:var(--paper);max-width:54ch;
+
+    font-weight:300;
+
+  }
+
+  .tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:4px}
+
+  .tag{
+
+    font-size:.74rem;letter-spacing:.12em;text-transform:uppercase;
+
+    border:1px solid var(--line);border-radius:100px;padding:6px 14px;
+
+    color:var(--violet-soft);backdrop-filter:blur(4px);
+
+  }
+
+
+
+  .eq{position:absolute;left:0;right:0;bottom:0;height:130px;z-index:2;
+
+    display:flex;align-items:flex-end;gap:5px;padding:0 6px;opacity:.85}
+
+  .eq span{
+
+    flex:1;background:linear-gradient(to top,var(--violet),transparent);
+
+    border-radius:3px 3px 0 0;transform-origin:bottom;
+
+    animation:bar 1.6s ease-in-out infinite;
+
+  }
+
   @keyframes bar{0%,100%{transform:scaleY(.18)}50%{transform:scaleY(1)}}
 
-  .scrollcue{position:absolute;bottom:24px;left:50%;transform:translateX(-50%);z-index:4;font-size:.68rem;letter-spacing:.3em;text-transform:uppercase;color:var(--muted);display:flex;flex-direction:column;align-items:center;gap:8px}
+
+
+  .scrollcue{
+
+    position:absolute;bottom:24px;left:50%;transform:translateX(-50%);z-index:4;
+
+    font-size:.68rem;letter-spacing:.3em;text-transform:uppercase;color:var(--muted);
+
+    display:flex;flex-direction:column;align-items:center;gap:8px;
+
+  }
+
   .scrollcue i{width:1px;height:34px;background:var(--muted);animation:cue 1.8s ease-in-out infinite}
+
   @keyframes cue{0%,100%{opacity:.2;transform:scaleY(.5)}50%{opacity:1;transform:scaleY(1)}}
 
+
+
   section{padding:108px 0;position:relative}
+
   .section-head{margin-bottom:48px}
-  .section-head h2{font-family:"Fraunces",serif;font-weight:500;letter-spacing:-.01em;font-size:clamp(2.1rem,5vw,3.4rem);margin:.5rem 0 0;line-height:1.05}
+
+  .section-head h2{
+
+    font-family:"Fraunces",serif;font-weight:500;letter-spacing:-.01em;
+
+    font-size:clamp(2.1rem,5vw,3.4rem);margin:.5rem 0 0;line-height:1.05;
+
+  }
+
+
 
   #about{background:var(--ink)}
+
   .about-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:56px;align-items:center}
+
   .about-grid p{font-size:1.12rem;color:#d9d3ee;font-weight:300}
-  .about-grid .lead{font-family:"Fraunces",serif;font-size:1.5rem;font-style:italic;font-weight:400;color:var(--paper);line-height:1.5;margin-bottom:1.4rem}
+
+  .about-grid .lead{
+
+    font-family:"Fraunces",serif;font-size:1.5rem;font-style:italic;
+
+    font-weight:400;color:var(--paper);line-height:1.5;margin-bottom:1.4rem;
+
+  }
+
   .profile-stack{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-  .profile-stack img{width:100%;height:220px;object-fit:cover;border-radius:14px;border:1px solid var(--line);filter:saturate(1.05)}
+
+  .profile-stack img{
+
+    width:100%;height:220px;object-fit:cover;border-radius:14px;
+
+    border:1px solid var(--line);filter:saturate(1.05);
+
+  }
+
   .profile-stack img:first-child{grid-column:1/-1;height:260px}
 
+
+
   #music{background:linear-gradient(180deg,var(--ink),var(--ink-2))}
-  .album{display:grid;grid-template-columns:340px 1fr;gap:48px;align-items:start;padding:40px;border:1px solid var(--line);border-radius:22px;background:linear-gradient(160deg,var(--ink-3),rgba(20,16,38,.4));margin-bottom:40px;position:relative;overflow:hidden}
-  .album::after{content:"";position:absolute;inset:0;border-radius:22px;box-shadow:inset 0 1px 0 rgba(255,255,255,.05);pointer-events:none}
+
+  .album{
+
+    display:grid;grid-template-columns:340px 1fr;gap:48px;align-items:start;
+
+    padding:40px;border:1px solid var(--line);border-radius:22px;
+
+    background:linear-gradient(160deg,var(--ink-3),rgba(20,16,38,.4));
+
+    margin-bottom:40px;position:relative;overflow:hidden;
+
+  }
+
+  .album::after{content:"";position:absolute;inset:0;border-radius:22px;
+
+    box-shadow:inset 0 1px 0 rgba(255,255,255,.05);pointer-events:none}
+
   .album .cover-wrap{position:relative}
-  .album .cover{width:100%;border-radius:14px;box-shadow:0 30px 60px -20px rgba(0,0,0,.7),0 0 0 1px var(--line)}
-  .badge{position:absolute;top:14px;left:14px;font-size:.66rem;letter-spacing:.16em;text-transform:uppercase;padding:6px 12px;border-radius:100px;font-weight:500;background:rgba(12,10,24,.7);backdrop-filter:blur(6px);border:1px solid var(--line)}
+
+  .album .cover{
+
+    width:100%;border-radius:14px;
+
+    box-shadow:0 30px 60px -20px rgba(0,0,0,.7),0 0 0 1px var(--line);
+
+  }
+
+  .badge{
+
+    position:absolute;top:14px;left:14px;font-size:.66rem;letter-spacing:.16em;
+
+    text-transform:uppercase;padding:6px 12px;border-radius:100px;font-weight:500;
+
+    background:rgba(12,10,24,.7);backdrop-filter:blur(6px);border:1px solid var(--line);
+
+  }
+
   .badge.out{color:var(--aurora)}
+
   .badge.soon{color:var(--gold)}
 
-  .album h3{font-family:"Fraunces",serif;font-style:italic;font-weight:500;font-size:2.2rem;margin:.2rem 0 .3rem;line-height:1.05}
+
+
+  .album h3{
+
+    font-family:"Fraunces",serif;font-style:italic;font-weight:500;
+
+    font-size:2.2rem;margin:.2rem 0 .3rem;line-height:1.05;
+
+  }
+
   .album .meta{font-size:.82rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+
   .album .desc{font-size:1rem;color:#cfc8e6;font-weight:300;margin:18px 0 24px}
+
   .album .desc strong{color:var(--violet-soft);font-weight:500}
 
-  .tracks{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:2px 28px;margin:18px 0 26px}
-  .trk{display:flex;gap:12px;align-items:baseline;padding:7px 0;border-bottom:1px solid var(--line);font-size:.92rem}
-  .trk .n{font-family:"Fraunces",serif;font-size:.82rem;color:var(--violet);min-width:24px;font-variant-numeric:tabular-nums}
+
+
+  .tracks{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));
+
+    gap:2px 28px;margin:18px 0 26px}
+
+  .trk{display:flex;gap:12px;align-items:baseline;padding:7px 0;
+
+    border-bottom:1px solid var(--line);font-size:.92rem}
+
+  .trk .n{font-family:"Fraunces",serif;font-size:.82rem;color:var(--violet);
+
+    min-width:24px;font-variant-numeric:tabular-nums}
+
   .trk .t{color:#d4cdec;font-weight:300}
-  
-  details.tracklist summary{list-style:none;cursor:pointer;color:var(--violet-soft);font-size:.84rem;letter-spacing:.1em;text-transform:uppercase;padding-top:6px;font-weight:500}
+
+  details.tracklist summary{
+
+    list-style:none;cursor:pointer;color:var(--violet-soft);font-size:.84rem;
+
+    letter-spacing:.1em;text-transform:uppercase;padding-top:6px;
+
+  }
+
   details.tracklist summary::-webkit-details-marker{display:none}
+
   details.tracklist summary::after{content:" ↓ 전체 보기"}
+
   details.tracklist[open] summary::after{content:" ↑ 접기"}
+
   details.tracklist[open] summary{margin-bottom:14px}
 
-  .listen{display:inline-flex;align-items:center;gap:10px;margin-top:6px;padding:13px 24px;border-radius:100px;font-weight:500;font-size:.92rem;color:var(--ink);background:linear-gradient(100deg,var(--aurora),var(--violet-soft));transition:transform .2s ease,box-shadow .2s ease;box-shadow:0 10px 30px -10px rgba(91,232,201,.5)}
+
+
+  .listen{
+
+    display:inline-flex;align-items:center;gap:10px;margin-top:6px;
+
+    padding:13px 24px;border-radius:100px;font-weight:500;font-size:.92rem;
+
+    color:var(--ink);background:linear-gradient(100deg,var(--aurora),var(--violet-soft));
+
+    transition:transform .2s ease,box-shadow .2s ease;
+
+    box-shadow:0 10px 30px -10px rgba(91,232,201,.5);
+
+  }
+
   .listen:hover{transform:translateY(-2px);box-shadow:0 16px 36px -10px rgba(139,109,240,.6)}
-  .listen .dot{width:8px;height:8px;border-radius:50%;background:var(--ink);animation:pulse 1.4s infinite}
+
+  .listen .dot{width:8px;height:8px;border-radius:50%;background:var(--ink);
+
+    animation:pulse 1.4s infinite}
+
   @keyframes pulse{0%,100%{opacity:.4}50%{opacity:1}}
 
+
+
   #wip{background:var(--ink-2)}
-  .wip-card{border:1px solid var(--line);border-radius:22px;padding:48px;text-align:center;background:radial-gradient(120% 120% at 50% 0%,rgba(139,109,240,.16),transparent 60%)}
+
+  .wip-card{
+
+    border:1px solid var(--line);border-radius:22px;padding:48px;text-align:center;
+
+    background:radial-gradient(120% 120% at 50% 0%,rgba(139,109,240,.16),transparent 60%);
+
+  }
+
   .wip-card p{color:var(--muted);margin:0 0 24px}
-  .wip-card .listen{background:transparent;color:var(--violet-soft);border:1px solid var(--violet);box-shadow:none}
+
+  .wip-card .listen{background:transparent;color:var(--violet-soft);
+
+    border:1px solid var(--violet);box-shadow:none}
+
   .wip-card .listen:hover{background:var(--violet);color:var(--ink)}
 
+
+
   #timeline{background:linear-gradient(180deg,var(--ink-2),var(--ink))}
+
   .tl{position:relative;margin-top:10px;padding-left:30px}
-  .tl::before{content:"";position:absolute;left:5px;top:6px;bottom:6px;width:1px;background:linear-gradient(var(--violet),var(--aurora))}
+
+  .tl::before{content:"";position:absolute;left:5px;top:6px;bottom:6px;width:1px;
+
+    background:linear-gradient(var(--violet),var(--aurora))}
+
   .tl-item{position:relative;padding:0 0 36px 28px}
-  .tl-item::before{content:"";position:absolute;left:-30px;top:6px;width:11px;height:11px;border-radius:50%;background:var(--ink);border:2px solid var(--aurora)}
+
+  .tl-item::before{content:"";position:absolute;left:-30px;top:6px;width:11px;height:11px;
+
+    border-radius:50%;background:var(--ink);border:2px solid var(--aurora)}
+
+  .tl-item:last-child{padding-bottom:0}
+
   .tl-item .date{font-family:"Fraunces",serif;font-size:1.4rem;color:var(--violet-soft)}
+
   .tl-item .what{color:#cfc8e6;font-weight:300}
-  .tl-item .pend{color:var(--gold);font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;margin-left:8px}
+
+  .tl-item .pend{color:var(--gold);font-size:.72rem;letter-spacing:.16em;
+
+    text-transform:uppercase;margin-left:8px}
+
+
 
   #contact{background:var(--ink);text-align:center}
-  #contact h2{font-family:"Fraunces",serif;font-style:italic;font-weight:400;font-size:clamp(2rem,6vw,4rem);margin:0 0 8px}
-  #contact .mail{display:inline-block;margin-top:18px;font-size:1.15rem;color:var(--aurora);border-bottom:1px solid var(--line);padding-bottom:3px}
-  footer{padding:40px 0;text-align:center;color:var(--muted);font-size:.8rem;letter-spacing:.1em;border-top:1px solid var(--line)}
+
+  #contact h2{font-family:"Fraunces",serif;font-style:italic;font-weight:400;
+
+    font-size:clamp(2rem,6vw,4rem);margin:0 0 8px}
+
+  #contact .mail{
+
+    display:inline-block;margin-top:18px;font-size:1.15rem;color:var(--aurora);
+
+    border-bottom:1px solid var(--line);padding-bottom:3px;transition:border-color .2s}
+
+  #contact .mail:hover{border-color:var(--aurora)}
+
+  footer{padding:40px 0;text-align:center;color:var(--muted);font-size:.8rem;
+
+    letter-spacing:.1em;border-top:1px solid var(--line)}
+
+
 
   .reveal{opacity:0;transform:translateY(26px);transition:opacity .8s ease,transform .8s ease}
+
   .reveal.in{opacity:1;transform:none}
-  @media (max-width:820px){.about-grid{grid-template-columns:1fr}.album{grid-template-columns:1fr;padding:24px}.album .cover{max-width:300px;margin:0 auto}}
+
+
+
+  @media (max-width:820px){
+
+    .about-grid{grid-template-columns:1fr;gap:36px}
+
+    .album{grid-template-columns:1fr;gap:28px;padding:24px}
+
+    .album .cover{max-width:300px;margin:0 auto}
+
+    section{padding:80px 0}
+
+  }
+
+  @media (prefers-reduced-motion:reduce){
+
+    *{animation:none!important;transition:none!important}
+
+    .reveal{opacity:1;transform:none}
+
+  }
+
 </style>
+
 </head>
+
 <body>
 
+
+
 <header class="hero">
+
   <svg class="stars" preserveAspectRatio="none" aria-hidden="true"></svg>
+
   <div class="hero-inner">
+
     <div class="wrap">
+
       <span class="eyebrow">Composer · Pianist · Storyteller</span>
+
       <h1>정태성<span class="en">Terry Jung</span></h1>
+
       <p class="role">순수한 상상력에서 출발한 이야기를 소리로 기록하는 어린 작곡가. 피아노에서 시작해 우주와 자연, 시간을 넘나드는 음악적 세계를 짓습니다.</p>
+
+      <div class="tags">
+
+        <span class="tag">CCM</span>
+
+        <span class="tag">Classical Crossover</span>
+
+        <span class="tag">Electronica</span>
+
+        <span class="tag">Epic</span>
+
+        <span class="tag">Storytelling</span>
+
+      </div>
+
     </div>
+
   </div>
+
+  <div class="eq" aria-hidden="true"></div>
+
+  <div class="scrollcue">Scroll<i></i></div>
+
 </header>
 
+
+
 <section id="about">
+
   <div class="wrap">
-    <div class="section-head reveal"><h2>About</h2></div>
-    <div class="about-grid reveal">
-      <div><p>정태성(Terry Jung)은 클래식을 기반으로 CCM, 크로스오버, 일렉트로니카를 넘나드는 작곡가이자 피아니스트입니다.</p></div>
-      <div class="profile-stack">
-        <img src="profile1.png" alt="프로필1"/><img src="profile2.png" alt="프로필2"/><img src="profile3.png" alt="프로필3"/>
-      </div>
+
+    <div class="section-head reveal">
+
+      <span class="eyebrow">About</span>
+
+      <h2>소리로 짓는 세계</h2>
+
     </div>
+
+    <div class="about-grid reveal">
+
+      <div>
+
+        <p class="lead">“어린아이가 만들었다고 믿기 어려운 깊은 감성과 구조적 창의성.”</p>
+
+        <p>정태성(Terry Jung)은 클래식을 기반으로 CCM, 크로스오버, 일렉트로니카를 넘나드는 작곡가이자 피아니스트입니다. 머릿속의 장면과 이야기를 화성과 리듬으로 옮기며, 나이를 가늠하기 어려운 자신만의 음악 세계를 한 곡씩 기록해 나가고 있습니다.</p>
+
+      </div>
+
+      <div class="profile-stack">
+
+        <img src="profile1.PNG" alt="Terry Jung 프로필 1" loading="lazy" />
+
+        <img src="profile2.png" alt="Terry Jung 프로필 2" loading="lazy" />
+
+        <img src="profile3.PNG" alt="Terry Jung 프로필 3" loading="lazy" />
+
+      </div>
+
+    </div>
+
   </div>
+
 </section>
+
+
 
 <section id="music">
+
   <div class="wrap">
-    <div class="section-head reveal"><h2>Music</h2></div>
+
+    <div class="section-head reveal">
+
+      <span class="eyebrow">Discography</span>
+
+      <h2>Music</h2>
+
+    </div>
+
+
 
     <article class="album reveal">
-      <div class="cover-wrap"><img src="album-cover.png" class="cover"/><span class="badge out">● Out Now</span></div>
+
+      <div class="cover-wrap">
+
+        <img src="album-cover.png" alt="The Counterattack Of Nature 앨범 커버" class="cover" loading="lazy" />
+
+        <span class="badge out">● Out Now</span>
+
+      </div>
+
       <div>
+
+        <div class="meta">Debut Album · 2026.01.08</div>
+
         <h3>The Counterattack Of Nature</h3>
-        <p class="desc">초등학생 작곡가의 첫 번째 클래식 크로스오버 앨범.</p>
+
+        <p class="desc">초등학생 작곡가의 첫 번째 클래식 크로스오버 앨범. 피아노를 중심으로 드럼과 베이스 기타가 유기적으로 어우러집니다. 타이틀 <strong>‘유독가스의 역습’</strong>은 도시를 뒤덮는 보이지 않는 위협을, <strong>‘산성비의 역습’</strong>은 변형되어 가는 숲의 초현실적 이미지를 음악으로 그려냅니다.</p>
+
         <div class="tracks">
-          <div class="trk"><span class="n">01</span><span>유독가스의 역습</span></div>
-          <div class="trk"><span class="n">02</span><span>산성비의 역습</span></div>
+
+          <div class="trk"><span class="n">01</span><span class="t">유독가스의 역습</span></div>
+
+          <div class="trk"><span class="n">02</span><span class="t">산성비의 역습</span></div>
+
         </div>
-        <a class="listen" href="#"><span class="dot"></span>Listen</a>
+
+        <a class="listen" href="https://linktr.ee/terryjung1stalbum" target="_blank" rel="noopener"><span class="dot"></span>Listen — The Counterattack Of Nature</a>
+
       </div>
+
     </article>
 
+
+
     <article class="album reveal">
-      <div class="cover-wrap"><img src="dino-adventure.png" class="cover"/><span class="badge out">● Out Now</span></div>
+
+      <div class="cover-wrap">
+
+        <img src="dino-adventure.png" alt="Dino Adventure 앨범 커버" class="cover" loading="lazy" />
+
+        <span class="badge soon">● Coming 2026.07</span>
+
+      </div>
+
       <div>
+
+        <div class="meta">2nd Album · 2026.07.01 (Scheduled) · 34 Tracks</div>
+
         <h3>Dino Adventure</h3>
-        <p class="desc">꿈꾸는 소년 Terry Jung이 일렉트로니카로 다시 그리는 순수 상상력.</p>
+
+        <p class="desc">천재 소년 Terry Jung이 일렉트로니카로 다시 그리는 순수 상상력의 장대한 파노라마. 어린이의 작품을 넘어 전 세대를 위한 <strong>판타지 음악 영화</strong>로, 현란한 멜로디와 박동하는 리듬 위로 베이스와 신스가 유기적으로 호흡합니다.</p>
+
+
+
         <div class="tracks">
-          <div class="trk"><span class="n">01</span><span>Beginning of the Adventure</span></div>
-          <div class="trk"><span class="n">02</span><span>운석 충돌</span></div>
+
+          <div class="trk"><span class="n">01</span><span class="t">Beginning of the Adventure</span></div>
+
+          <div class="trk"><span class="n">02</span><span class="t">운석 충돌</span></div>
+
+          <div class="trk"><span class="n">03</span><span class="t">훼손된 보금자리</span></div>
+
+          <div class="trk"><span class="n">04</span><span class="t">초음파 번개</span></div>
+
+          <div class="trk"><span class="n">05</span><span class="t">해저 2만리</span></div>
+
+          <div class="trk"><span class="n">06</span><span class="t">시공간 초월</span></div>
+
         </div>
+
+
+
         <details class="tracklist">
-          <summary>트랙 더 보기</summary>
+
+          <summary></summary>
+
           <div class="tracks">
-            <div class="trk"><span class="n">03</span><span>훼손된 보금자리</span></div>
-            <div class="trk"><span class="n">34</span><span>붉은 밤하늘의 저주</span></div>
+
+            <div class="trk"><span class="n">07</span><span class="t">예언이 된 사전</span></div>
+
+            <div class="trk"><span class="n">08</span><span class="t">찾아온 평화</span></div>
+
+            <div class="trk"><span class="n">09</span><span class="t">아찔한 순간</span></div>
+
+            <div class="trk"><span class="n">10</span><span class="t">시대의 초월</span></div>
+
+            <div class="trk"><span class="n">11</span><span class="t">영혼의 부름</span></div>
+
+            <div class="trk"><span class="n">12</span><span class="t">블랙홀을 넘어</span></div>
+
+            <div class="trk"><span class="n">13</span><span class="t">다른 차원 문</span></div>
+
+            <div class="trk"><span class="n">14</span><span class="t">음악속의 비밀공간</span></div>
+
+            <div class="trk"><span class="n">15</span><span class="t">우주를 넘어</span></div>
+
+            <div class="trk"><span class="n">16</span><span class="t">오리엔탈리즘 차원 문</span></div>
+
+            <div class="trk"><span class="n">17</span><span class="t">미래의 악한 AI</span></div>
+
+            <div class="trk"><span class="n">18</span><span class="t">가자 과거로</span></div>
+
+            <div class="trk"><span class="n">19</span><span class="t">놀이공원의 좀비들</span></div>
+
+            <div class="trk"><span class="n">20</span><span class="t">정글 유괴</span></div>
+
+            <div class="trk"><span class="n">21</span><span class="t">이슬람 성전에 갇힘</span></div>
+
+            <div class="trk"><span class="n">22</span><span class="t">크리스마스 전쟁</span></div>
+
+            <div class="trk"><span class="n">23</span><span class="t">바닷속 독성 해파리 출현</span></div>
+
+            <div class="trk"><span class="n">24</span><span class="t">대규모 지진</span></div>
+
+            <div class="trk"><span class="n">25</span><span class="t">비행기 추락</span></div>
+
+            <div class="trk"><span class="n">26</span><span class="t">홍수</span></div>
+
+            <div class="trk"><span class="n">27</span><span class="t">백두산 폭발</span></div>
+
+            <div class="trk"><span class="n">28</span><span class="t">63빌딩 테러</span></div>
+
+            <div class="trk"><span class="n">29</span><span class="t">화재</span></div>
+
+            <div class="trk"><span class="n">30</span><span class="t">USB 데이터 속</span></div>
+
+            <div class="trk"><span class="n">31</span><span class="t">태풍의 역습</span></div>
+
+            <div class="trk"><span class="n">32</span><span class="t">동굴에서 길 잃음</span></div>
+
+            <div class="trk"><span class="n">33</span><span class="t">가자 미래로</span></div>
+
+            <div class="trk"><span class="n">34</span><span class="t">붉은 밤하늘의 저주</span></div>
+
           </div>
+
         </details>
-        <a class="listen" href="#"><span class="dot"></span>Listen</a>
+
+
+
+        <a class="listen" href="https://linktr.ee/terryjung2ndalbum" target="_blank" rel="noopener"><span class="dot"></span>Listen — Dino Adventure</a>
+
       </div>
+
     </article>
 
-    <article class="album reveal">
-      <div class="cover-wrap"><img src="psalm146.PNG" class="cover"/><span class="badge soon">● Coming 2026.07.20</span></div>
-      <div>
-        <h3>Psalm 146</h3>
-        <p class="desc">시편 146편의 말씀을 깊이 있는 선율로 담아낸 세 번째 앨범.</p>
-        <div class="tracks">
-          <div class="trk"><span class="n">01</span><span>시편146 (Female version)</span></div>
-          <div class="trk"><span class="n">02</span><span>시편146 (Male version)</span></div>
-          <div class="trk"><span class="n">03</span><span>시편146 (Mixed Choir version)</span></div>
-          <div class="trk"><span class="n">04</span><span>시편146 (Piano version)</span></div>
-        </div>
-      </div>
-    </article>
   </div>
+
 </section>
+
+
+
+<section id="wip">
+
+  <div class="wrap">
+
+    <div class="section-head reveal">
+
+      <span class="eyebrow">In the Studio</span>
+
+      <h2>Works in Progress</h2>
+
+    </div>
+
+    <div class="wip-card reveal">
+
+      <p>작업 중인 미완성 트랙과 스케치를 유튜브 플레이리스트에서 먼저 들어보세요.</p>
+
+      <a class="listen" href="https://youtube.com/playlist?list=PLXQ_lhdtWxrmoKnrWl1hr_ADcsPpByPu0&si=1_nEisV2yK-NKPKk" target="_blank" rel="noopener">▶ View Works in Progress</a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
 
 <section id="timeline">
+
   <div class="wrap">
-    <h2>Timeline</h2>
-    <div class="tl reveal">
-      <div class="tl-item"><div class="date">2026.01.08</div><div class="what">1집 발매</div></div>
-      <div class="tl-item"><div class="date">2026.07.01</div><div class="what">2집 발매</div></div>
-      <div class="tl-item"><div class="date">2026.07.20<span class="pend">Scheduled</span></div><div class="what">3집 《Psalm 146》 발매 예정</div></div>
+
+    <div class="section-head reveal">
+
+      <span class="eyebrow">Journey</span>
+
+      <h2>Timeline</h2>
+
     </div>
+
+    <div class="tl reveal">
+
+      <div class="tl-item">
+
+        <div class="date">2026.01.08</div>
+
+        <div class="what">데뷔 앨범 《The Counterattack Of Nature》 발매</div>
+
+      </div>
+
+      <div class="tl-item">
+
+        <div class="date">2026.07.01<span class="pend">Scheduled</span></div>
+
+        <div class="what">두 번째 앨범 《Dino Adventure》 발매 예정</div>
+
+      </div>
+
+    </div>
+
   </div>
+
 </section>
 
+
+
+<section id="contact">
+
+  <div class="wrap">
+
+    <span class="eyebrow" style="justify-content:center">Get in touch</span>
+
+    <h2>Let's make something.</h2>
+
+    <a class="mail" href="mailto:woontaejung@gmail.com">woontaejung@gmail.com</a>
+
+  </div>
+
+</section>
+
+
+
+<footer>© Terry Jung · All rights reserved</footer>
+
+
+
 <script>
-  // 스크롤 애니메이션 Observer
-  const io = new IntersectionObserver(es => {
-    es.forEach(e => { if(e.isIntersecting) e.target.classList.add('in'); });
-  }, {threshold:.1});
-  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  (function(){
+
+    var svg=document.querySelector('.stars');if(!svg)return;
+
+    var w=window.innerWidth,h=window.innerHeight;
+
+    svg.setAttribute('viewBox','0 0 '+w+' '+h);
+
+    var frag='';
+
+    for(var i=0;i<90;i++){
+
+      var x=Math.random()*w,y=Math.random()*h,r=Math.random()*1.4+.3,
+
+          o=(Math.random()*.6+.2).toFixed(2),d=(Math.random()*4+2).toFixed(1);
+
+      frag+='<circle cx="'+x.toFixed(0)+'" cy="'+y.toFixed(0)+'" r="'+r.toFixed(1)+
+
+        '" fill="#cdbfff" opacity="'+o+'"><animate attributeName="opacity" values="'+
+
+        o+';0.05;'+o+'" dur="'+d+'s" repeatCount="indefinite"/></circle>';
+
+    }
+
+    svg.innerHTML=frag;
+
+  })();
+
+
+
+  (function(){
+
+    var eq=document.querySelector('.eq');if(!eq)return;
+
+    var n=Math.min(64,Math.floor(window.innerWidth/16)),html='';
+
+    for(var i=0;i<n;i++){
+
+      var dur=(Math.random()*1.1+0.9).toFixed(2),del=(Math.random()*1.4).toFixed(2),
+
+          h=(Math.random()*60+30).toFixed(0);
+
+      html+='<span style="height:'+h+'%;animation-duration:'+dur+'s;animation-delay:-'+del+'s"></span>';
+
+    }
+
+    eq.innerHTML=html;
+
+  })();
+
+
+
+  (function(){
+
+    var io=new IntersectionObserver(function(es){
+
+      es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});
+
+    },{threshold:.14});
+
+    document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
+
+  })();
+
 </script>
+
+
+
 </body>
+
 </html>
+
+// 2번째 앨범이 오늘 KST 7/1 12시에 발표되고 나서, 사람들에게 이 사이트를 공개 할꺼라서, 발매 예정이 아니라 발매 된 기준으로 코딩을 변경해줘, 전체 code를 복사해서붙여넣을 수 있도록, 전체 코드를 알려줘 
+
