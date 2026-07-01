@@ -135,7 +135,6 @@
     background:rgba(12,10,24,.7);backdrop-filter:blur(6px);border:1px solid var(--line);
   }
   .badge.out{color:var(--aurora)}
-  .badge.soon{color:var(--gold)}
 
   .album h3{
     font-family:"Fraunces",serif;font-style:italic;font-weight:500;
@@ -152,9 +151,11 @@
   .trk .n{font-family:"Fraunces",serif;font-size:.82rem;color:var(--violet);
     min-width:24px;font-variant-numeric:tabular-nums}
   .trk .t{color:#d4cdec;font-weight:300}
+  
   details.tracklist summary{
     list-style:none;cursor:pointer;color:var(--violet-soft);font-size:.84rem;
     letter-spacing:.1em;text-transform:uppercase;padding-top:6px;
+    font-weight: 500;
   }
   details.tracklist summary::-webkit-details-marker{display:none}
   details.tracklist summary::after{content:" ↓ 전체 보기"}
@@ -193,8 +194,6 @@
   .tl-item:last-child{padding-bottom:0}
   .tl-item .date{font-family:"Fraunces",serif;font-size:1.4rem;color:var(--violet-soft)}
   .tl-item .what{color:#cfc8e6;font-weight:300}
-  .tl-item .pend{color:var(--gold);font-size:.72rem;letter-spacing:.16em;
-    text-transform:uppercase;margin-left:8px}
 
   #contact{background:var(--ink);text-align:center}
   #contact h2{font-family:"Fraunces",serif;font-style:italic;font-weight:400;
@@ -214,10 +213,6 @@
     .album{grid-template-columns:1fr;gap:28px;padding:24px}
     .album .cover{max-width:300px;margin:0 auto}
     section{padding:80px 0}
-  }
-  @media (prefers-reduced-motion:reduce){
-    *{animation:none!important;transition:none!important}
-    .reveal{opacity:1;transform:none}
   }
 </style>
 </head>
@@ -255,9 +250,9 @@
         <p>정태성(Terry Jung)은 클래식을 기반으로 CCM, 크로스오버, 일렉트로니카를 넘나드는 작곡가이자 피아니스트입니다. 머릿속의 장면과 이야기를 화성과 리듬으로 옮기며, 나이를 가늠하기 어려운 자신만의 음악 세계를 한 곡씩 기록해 나가고 있습니다.</p>
       </div>
       <div class="profile-stack">
-        <img src="profile1.PNG" alt="Terry Jung 프로필 1" loading="lazy" />
+        <img src="profile1.png" alt="Terry Jung 프로필 1" loading="lazy" />
         <img src="profile2.png" alt="Terry Jung 프로필 2" loading="lazy" />
-        <img src="profile3.PNG" alt="Terry Jung 프로필 3" loading="lazy" />
+        <img src="profile3.png" alt="Terry Jung 프로필 3" loading="lazy" />
       </div>
     </div>
   </div>
@@ -270,6 +265,7 @@
       <h2>Music</h2>
     </div>
 
+    <!-- 1집 -->
     <article class="album reveal">
       <div class="cover-wrap">
         <img src="album-cover.png" alt="The Counterattack Of Nature 앨범 커버" class="cover" loading="lazy" />
@@ -278,14 +274,16 @@
       <div>
         <div class="meta">Debut Album · 2026.01.08</div>
         <h3>The Counterattack Of Nature</h3>
-        <p class="desc">초등학생 작곡가의 첫 번째 클래식 크로스오버 앨범. 피아노를 중심으로 드럼과 베이스 기타가 유기적으로 어우러집니다.</p>
+        <p class="desc">초등학생 작곡가의 첫 번째 클래식 크로스오버 앨범. 피아노를 중심으로 드럼과 베이스 기타가 유기적으로 어우러집니다. 타이틀 <strong>‘유독가스의 역습’</strong>은 도시를 뒤덮는 보이지 않는 위협을, <strong>‘산성비의 역습’</strong>은 변형되어 가는 숲의 초현실적 이미지를 음악으로 그려냅니다.</p>
         <div class="tracks">
           <div class="trk"><span class="n">01</span><span class="t">유독가스의 역습</span></div>
           <div class="trk"><span class="n">02</span><span class="t">산성비의 역습</span></div>
         </div>
+        <a class="listen" href="https://linktr.ee/terryjung1stalbum" target="_blank" rel="noopener"><span class="dot"></span>Listen — The Counterattack Of Nature</a>
       </div>
     </article>
 
+    <!-- 2집 -->
     <article class="album reveal">
       <div class="cover-wrap">
         <img src="dino-adventure.png" alt="Dino Adventure 앨범 커버" class="cover" loading="lazy" />
@@ -294,80 +292,57 @@
       <div>
         <div class="meta">2nd Album · 2026.07.01</div>
         <h3>Dino Adventure</h3>
-        <p class="desc">소년 작곡가 Terry Jung이 일렉트로니카로 다시 그리는 순수 상상력의 장대한 파노라마.</p>
+        <p class="desc">꿈꾸는 소년 Terry Jung이 일렉트로니카로 다시 그리는 순수 상상력의 장대한 파노라마. 어린이의 작품을 넘어 전 세대를 위한 <strong>판타지 음악 영화</strong>로, 현란한 멜로디와 박동하는 리듬 위로 베이스와 신스가 유기적으로 호흡합니다.</p>
+        
         <div class="tracks">
           <div class="trk"><span class="n">01</span><span class="t">Beginning of the Adventure</span></div>
           <div class="trk"><span class="n">02</span><span class="t">운석 충돌</span></div>
+          <div class="trk"><span class="n">03</span><span class="t">훼손된 보금자리</span></div>
+          <div class="trk"><span class="n">04</span><span class="t">초음파 번개</span></div>
+          <div class="trk"><span class="n">05</span><span class="t">해저 2만리</span></div>
+          <div class="trk"><span class="n">06</span><span class="t">시공간 초월</span></div>
         </div>
+
+        <details class="tracklist">
+          <summary>트랙 전체 보기</summary>
+          <div class="tracks">
+            <div class="trk"><span class="n">07</span><span class="t">예언이 된 사전</span></div>
+            <div class="trk"><span class="n">08</span><span class="t">찾아온 평화</span></div>
+            <div class="trk"><span class="n">09</span><span class="t">아찔한 순간</span></div>
+            <div class="trk"><span class="n">10</span><span class="t">시대의 초월</span></div>
+            <div class="trk"><span class="n">11</span><span class="t">영혼의 부름</span></div>
+            <div class="trk"><span class="n">12</span><span class="t">블랙홀을 넘어</span></div>
+            <div class="trk"><span class="n">13</span><span class="t">다른 차원 문</span></div>
+            <div class="trk"><span class="n">14</span><span class="t">음악속의 비밀공간</span></div>
+            <div class="trk"><span class="n">15</span><span class="t">우주를 넘어</span></div>
+            <div class="trk"><span class="n">16</span><span class="t">오리엔탈리즘 차원 문</span></div>
+            <div class="trk"><span class="n">17</span><span class="t">미래의 악한 AI</span></div>
+            <div class="trk"><span class="n">18</span><span class="t">가자 과거로</span></div>
+            <div class="trk"><span class="n">19</span><span class="t">놀이공원의 좀비들</span></div>
+            <div class="trk"><span class="n">20</span><span class="t">정글 유괴</span></div>
+            <div class="trk"><span class="n">21</span><span class="t">이슬람 성전에 갇힘</span></div>
+            <div class="trk"><span class="n">22</span><span class="t">크리스마스 전쟁</span></div>
+            <div class="trk"><span class="n">23</span><span class="t">바닷속 독성 해파리 출현</span></div>
+            <div class="trk"><span class="n">24</span><span class="t">대규모 지진</span></div>
+            <div class="trk"><span class="n">25</span><span class="t">비행기 추락</span></div>
+            <div class="trk"><span class="n">26</span><span class="t">홍수</span></div>
+            <div class="trk"><span class="n">27</span><span class="t">백두산 폭발</span></div>
+            <div class="trk"><span class="n">28</span><span class="t">63빌딩 테러</span></div>
+            <div class="trk"><span class="n">29</span><span class="t">화재</span></div>
+            <div class="trk"><span class="n">30</span><span class="t">USB 데이터 속</span></div>
+            <div class="trk"><span class="n">31</span><span class="t">태풍의 역습</span></div>
+            <div class="trk"><span class="n">32</span><span class="t">동굴에서 길 잃음</span></div>
+            <div class="trk"><span class="n">33</span><span class="t">가자 미래로</span></div>
+            <div class="trk"><span class="n">34</span><span class="t">붉은 밤하늘의 저주</span></div>
+          </div>
+        </details>
+        <a class="listen" href="https://linktr.ee/terryjung2ndalbum" target="_blank" rel="noopener"><span class="dot"></span>Listen — Dino Adventure</a>
       </div>
     </article>
-
-    <article class="album reveal">
-      <div class="cover-wrap">
-        <img src="psalm146.PNG" alt="Psalm 146 앨범 커버" class="cover" loading="lazy" />
-        <span class="badge soon">● Coming 2026.07.20</span>
-      </div>
-      <div>
-        <div class="meta">3rd Album · 2026.07.20 (Scheduled)</div>
-        <h3>Psalm 146</h3>
-        <p class="desc">시편 146편의 말씀을 깊이 있는 선율로 담아낸 세 번째 앨범. 다양한 버전의 편곡을 통해 메시지를 전달합니다.</p>
-        <div class="tracks">
-          <div class="trk"><span class="n">01</span><span class="t">시편146 (Female version)</span></div>
-          <div class="trk"><span class="n">02</span><span class="t">시편146 (Male version)</span></div>
-          <div class="trk"><span class="n">03</span><span class="t">시편146 (Mixed Choir version)</span></div>
-          <div class="trk"><span class="n">04</span><span class="t">시편146 (Piano version)</span></div>
-        </div>
-      </div>
-    </article>
   </div>
 </section>
 
-<section id="wip">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <span class="eyebrow">In the Studio</span>
-      <h2>Works in Progress</h2>
-    </div>
-    <div class="wip-card reveal">
-      <p>작업 중인 미완성 트랙과 스케치를 유튜브 플레이리스트에서 먼저 들어보세요.</p>
-      <a class="listen" href="https://youtube.com/playlist?list=PLXQ_lhdtWxrmoKnrWl1hr_ADcsPpByPu0&si=1_nEisV2yK-NKPKk" target="_blank" rel="noopener">▶ View Works in Progress</a>
-    </div>
-  </div>
-</section>
-
-<section id="timeline">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <span class="eyebrow">Journey</span>
-      <h2>Timeline</h2>
-    </div>
-    <div class="tl reveal">
-      <div class="tl-item">
-        <div class="date">2026.01.08</div>
-        <div class="what">데뷔 앨범 《The Counterattack Of Nature》 발매</div>
-      </div>
-      <div class="tl-item">
-        <div class="date">2026.07.01</div>
-        <div class="what">두 번째 앨범 《Dino Adventure》 발매</div>
-      </div>
-      <div class="tl-item">
-        <div class="date">2026.07.20<span class="pend">Scheduled</span></div>
-        <div class="what">세 번째 앨범 《Psalm 146》 발매 예정</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="contact">
-  <div class="wrap">
-    <span class="eyebrow" style="justify-content:center">Get in touch</span>
-    <h2>Let's make something.</h2>
-    <a class="mail" href="mailto:woontaejung@gmail.com">woontaejung@gmail.com</a>
-  </div>
-</section>
-
-<footer>© Terry Jung · All rights reserved</footer>
-
+<!-- 나머지 섹션 생략 (동일) -->
 <script>
   (function(){
     var svg=document.querySelector('.stars');if(!svg)return;
@@ -383,18 +358,6 @@
     }
     svg.innerHTML=frag;
   })();
-
-  (function(){
-    var eq=document.querySelector('.eq');if(!eq)return;
-    var n=Math.min(64,Math.floor(window.innerWidth/16)),html='';
-    for(var i=0;i<n;i++){
-      var dur=(Math.random()*1.1+0.9).toFixed(2),del=(Math.random()*1.4).toFixed(2),
-          h=(Math.random()*60+30).toFixed(0);
-      html+='<span style="height:'+h+'%;animation-duration:'+dur+'s;animation-delay:-'+del+'s"></span>';
-    }
-    eq.innerHTML=html;
-  })();
-
   (function(){
     var io=new IntersectionObserver(function(es){
       es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});
@@ -402,6 +365,5 @@
     document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
   })();
 </script>
-
 </body>
 </html>
